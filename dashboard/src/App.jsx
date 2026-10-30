@@ -1180,7 +1180,10 @@ function App() {
 
       const res = await apiFetch('/api/process', { method: 'POST', headers, body });
 
-      if (!res.ok) throw new Error(await res.text());
+      if (!res.ok) {
+        const errText = await res.text();
+        throw new Error(errText || `Server responded with ${res.status} ${res.statusText || 'Error'}`);
+      }
       const resData = await res.json();
 
       // Quality gate: the source is below the min resolution — ask before burning

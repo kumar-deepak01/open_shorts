@@ -1,9 +1,20 @@
 {
   "rewrites": [
     {
+      "source": "/api/:path*",
+      "destination": "https://open-shorts.onrender.com/api/:path*"
+    },
+    {
+      "source": "/videos/:path*",
+      "destination": "https://open-shorts.onrender.com/videos/:path*"
+    },
+    {
+      "source": "/thumbnails/:path*",
+      "destination": "https://open-shorts.onrender.com/thumbnails/:path*"
+    },
+    {
       "source": "/(.*)",
       "destination": "/index.html"
     }
   ]
 }
-
