@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # OpenShorts.app
 
 Open source AI clip generator: turn long videos into viral 9:16 Shorts, TikToks and Reels. A self-hostable Opus Clip alternative (MIT).
@@ -501,3 +502,6 @@ Contributions are welcome! Whether it's adding new AI models, improving the lip-
 MIT License for the core application — OpenShorts is yours to use, modify, and scale.
 
 **Exception:** the [`cloud/`](cloud/LICENSE) directory (billing, managed keys, and the hosted-service infrastructure behind the optional `BILLING_ENABLED` flag) is source-available under the OpenShorts Commercial License. You can read it, modify it, and self-host it for personal or internal use, but you can't offer it to third parties as a paid/hosted service. Self-hosting the core app never requires this directory.
+=======
+# open_shorts
+>>>>>>> 5afb8d4a3467d3611d2107586137549cad614013
